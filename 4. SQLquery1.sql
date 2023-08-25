@@ -1,5 +1,5 @@
 -- Create the 'KALBE' database:
-CREATE DATABASE KALBE;s
+CREATE DATABASE KALBE;
 
 -- Switch to the 'KALBE' database
 USE KALBE;
