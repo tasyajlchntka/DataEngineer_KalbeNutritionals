@@ -33,6 +33,10 @@ UPDATE Inventory
 SET Item_price = 5000
 WHERE Item_name = 'Entrasol Gold 370G';
 
+--What will happen if we insert another item_name with item_code of 2343 into the table?
+/*If we insert item_code 2343 (Nutrive Benecol 100ML) which already exists in the table,
+It will fail because the primary key must be unique for each row in the table.*/
+
 --Delete the Item_name with the lowest Item_total:
 DELETE FROM Inventory
 WHERE Item_total = (SELECT MIN(Item_total) FROM Inventory);
